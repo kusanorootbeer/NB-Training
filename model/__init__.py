@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*-
-import test as *
+from . import func
