@@ -1,3 +1,3 @@
-# NB_Training
-class ベースでのjupyter notebook が使えるのか実験
-あと，使い勝手も
+# NB_parts
+
+https://github.com/kusanorootbeer/NB_main でimport するようのパーツをこっちに集める
