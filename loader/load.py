@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import numpy
+import numpy as np
+import pandas as pd
 
 
 def load_csv(path, *, delimiter=",", label_col="None", skip_row=[], skip_col=[], view=True):
