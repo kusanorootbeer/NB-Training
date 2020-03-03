@@ -20,22 +20,22 @@ import pdb
 # skip_row indexは header分も考慮して入力すること
 
 
-def load_csv(path, *, delimiter=',', label_col=None, header_row=None, index=None, skip_row=[], skip_col=[]):
+def load_csv(path, *, delimiter=',', label_col=None, header_row=None, index=None, skip_row=[], skip_col=[], name=None):
     try:
-        x = pd.read_csv(path, header=header_row, index_col=index, usecols=lambda x: x is not in skip_col, skiprows=skip_row)
+        x = pd.read_csv(path, header=header_row, index_col=index,
+                        usecols=lambda x: x not in skip_col, skiprows=skip_row)
     except:
-        try:
-            x = pd.read_table(path, header=header_row, index_col=index, usecols=lambda x: x is not in skip_col, skiprows=skip_row)
-        except:
-            print(path)
-            pdb.set_trace()
+        print(path)
+
+    if name == 'path':
+        name = path
 
     if label_col is not None:
         y = x[label_col]
-        x.drop(label_col, axis=1)
-        return x, y
+        x = x.drop(label_col, axis=1)
+        return x, y, name
     else:
-        return x
+        return x, name
 
 
 def load_csv_dir():
