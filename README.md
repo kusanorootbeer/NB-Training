@@ -24,6 +24,12 @@ https://github.com/kusanorootbeer/NB_main で import するようのパーツを
 - model(trainX=np.array, TrainY={np.array, None}, ValidX={np.array, None}, ValidY={np.array, None})
 - visualize(dataX=np.array, labelY={np.array, None}, optional)
 
+# Outlook
+
+- classification task
+- model optimization by **_optune_**
+  `conda install -c conda-forge optuna`
+
 ## Concrete Rule
 
 - dataX.shape
