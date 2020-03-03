@@ -42,4 +42,4 @@ https://github.com/kusanorootbeer/NB_main で import するようのパーツを
 
 ## Post Scripts
 
-`/debug`は Jupyter Notebook を介さず，local で実行するときにつかう
+`/debug debug.py`は Jupyter Notebook を介さず，local で実行するときにつかう
