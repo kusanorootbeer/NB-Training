@@ -39,3 +39,7 @@ https://github.com/kusanorootbeer/NB_main で import するようのパーツを
   - vector: (none, data)
 - labelY.shape
   - onehot label
+
+## Post Scripts
+
+`/debug`は Jupyter Notebook を介さず，local で実行するときにつかう
