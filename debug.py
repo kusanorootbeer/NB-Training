@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import numpy as np
+import pandas as pd
 import pdb
 
 
@@ -15,6 +17,7 @@ def main():
 # normalize
     data_x = norm.min_max_normalization(df_x.values)
     data_y, label_restorer = norm.label_quantization(df_y.values.flatten())
+    # df_y2 = pd.DataFrame(data_y, columns=['label'], dtype=int)
 
     pdb.set_trace()
 
